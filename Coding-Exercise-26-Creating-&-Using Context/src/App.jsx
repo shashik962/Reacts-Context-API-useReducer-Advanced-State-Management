@@ -1,7 +1,12 @@
 import Page from './Page';
-
+import ThemeContextProvider from './ThemeContextProvider';
+ 
 function App() {
-  return <Page />;
+  return (
+    <ThemeContextProvider>
+      <Page />
+    </ThemeContextProvider>
+  );
 }
-
+ 
 export default App;
